@@ -1,0 +1,10 @@
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\bin\Debug\VP4.2.exe.config
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\bin\Debug\VP4.2.exe
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\bin\Debug\VP4.2.pdb
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\obj\Debug\VP4.2.csprojAssemblyReference.cache
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\obj\Debug\VP4._2.Form1.resources
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\obj\Debug\VP4._2.Properties.Resources.resources
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\obj\Debug\VP4.2.csproj.GenerateResource.cache
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\obj\Debug\VP4.2.csproj.CoreCompileInputs.cache
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\obj\Debug\VP4.2.exe
+C:\Users\OHSEHOON\Desktop\git\visual_programing_c_chap\VP4.2\VP4.2\obj\Debug\VP4.2.pdb
