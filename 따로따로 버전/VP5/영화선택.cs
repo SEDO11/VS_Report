@@ -111,7 +111,6 @@ namespace VP5
 
         private void 영화선택_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
