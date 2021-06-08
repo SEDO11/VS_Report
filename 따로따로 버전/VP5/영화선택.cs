@@ -106,7 +106,7 @@ namespace VP5
             MessageBox.Show("어른 " + frList[index].adult.ToString() + " 명\n" +
                "청소년 " + frList[index].teen.ToString() + " 명\n" +
                "장애인(우대) " + frList[index].dp.ToString() + " 명\n" +
-               "총 가격 " + ((adultmoney * frList[index].adult) + (teenmoney * frList[index].teen) + (dpmoney * frList[index].dp)) + " 원", ("예매내역"));
+               "총 가격 " + ((adultmoney * frList[index].adult) + (teenmoney * frList[index].teen) + (dpmoney * frList[index].dp)) + " 원", ("예매내역 상세"));
         }
 
         private void 영화선택_Load(object sender, EventArgs e)

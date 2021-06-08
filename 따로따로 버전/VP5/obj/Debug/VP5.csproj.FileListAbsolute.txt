@@ -26,8 +26,6 @@ C:\Users\donha\OneDrive\바탕 화면\git\visual_programing_c_chap\VP5\VP5\obj\D
 C:\Users\donha\OneDrive\바탕 화면\git\visual_programing_c_chap\VP5\VP5\obj\Debug\VP5.pdb
 C:\Users\donha\OneDrive\바탕 화면\git\visual_programing_c_chap\VP5\VP5\obj\Debug\VP5.메뉴.resources
 C:\Users\donha\OneDrive\바탕 화면\git\visual_programing_c_chap\VP5\VP5\obj\Debug\VP5.영화선택.resources
-C:\Users\donha\OneDrive\바탕 화면\git\VS_Report\따로따로 버전\VP5\bin\Debug\UserInfo.mdf
-C:\Users\donha\OneDrive\바탕 화면\git\VS_Report\따로따로 버전\VP5\bin\Debug\UserInfo_log.ldf
 C:\Users\donha\OneDrive\바탕 화면\git\VS_Report\따로따로 버전\VP5\bin\Debug\VP5.exe.config
 C:\Users\donha\OneDrive\바탕 화면\git\VS_Report\따로따로 버전\VP5\bin\Debug\VP5.exe
 C:\Users\donha\OneDrive\바탕 화면\git\VS_Report\따로따로 버전\VP5\bin\Debug\VP5.pdb
