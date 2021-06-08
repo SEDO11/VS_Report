@@ -29,47 +29,50 @@ namespace VP5
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRv = new System.Windows.Forms.Button();
             this.lblUser = new System.Windows.Forms.Label();
+            this.btnUserSelct = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRv
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 58);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "영화 예매하기";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(166, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 58);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "영화 예매내역";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnRv.Location = new System.Drawing.Point(12, 12);
+            this.btnRv.Name = "btnRv";
+            this.btnRv.Size = new System.Drawing.Size(103, 58);
+            this.btnRv.TabIndex = 0;
+            this.btnRv.Text = "영화 예매하기";
+            this.btnRv.UseVisualStyleBackColor = true;
+            this.btnRv.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblUser
             // 
             this.lblUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblUser.Location = new System.Drawing.Point(12, 217);
+            this.lblUser.Font = new System.Drawing.Font("굴림", 12F);
+            this.lblUser.Location = new System.Drawing.Point(12, 97);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(257, 37);
+            this.lblUser.Size = new System.Drawing.Size(257, 51);
             this.lblUser.TabIndex = 2;
+            this.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
+            // 
+            // btnUserSelct
+            // 
+            this.btnUserSelct.Location = new System.Drawing.Point(164, 12);
+            this.btnUserSelct.Name = "btnUserSelct";
+            this.btnUserSelct.Size = new System.Drawing.Size(105, 58);
+            this.btnUserSelct.TabIndex = 3;
+            this.btnUserSelct.Text = "유저 확인";
+            this.btnUserSelct.UseVisualStyleBackColor = true;
+            this.btnUserSelct.Click += new System.EventHandler(this.btnUserSelct_Click);
             // 
             // 메뉴
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(281, 268);
+            this.ClientSize = new System.Drawing.Size(281, 167);
+            this.Controls.Add(this.btnUserSelct);
             this.Controls.Add(this.lblUser);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRv);
             this.Name = "메뉴";
             this.Text = "메뉴";
             this.ResumeLayout(false);
@@ -78,8 +81,8 @@ namespace VP5
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRv;
         private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Button btnUserSelct;
     }
 }

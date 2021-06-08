@@ -27,7 +27,7 @@ namespace VP5
             {
                 MessageBox.Show("확인되었습니다.", "확인", MessageBoxButtons.OK);
                 메뉴 menufrm = new 메뉴();
-                menufrm.Passvalue = tbId.Text;  // 전달자(Passvalue)를 통해서 Form2 로 전달
+                menufrm.username = tbId.Text;
                 menufrm.ShowDialog();
             }
             else

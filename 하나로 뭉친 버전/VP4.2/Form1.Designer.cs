@@ -63,9 +63,10 @@ namespace VP4._2
             // 
             // btnSelct
             // 
-            this.btnSelct.Location = new System.Drawing.Point(360, 369);
+            this.btnSelct.Location = new System.Drawing.Point(315, 295);
+            this.btnSelct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelct.Name = "btnSelct";
-            this.btnSelct.Size = new System.Drawing.Size(124, 50);
+            this.btnSelct.Size = new System.Drawing.Size(108, 40);
             this.btnSelct.TabIndex = 19;
             this.btnSelct.Text = "영화 선택";
             this.btnSelct.UseVisualStyleBackColor = true;
@@ -74,68 +75,68 @@ namespace VP4._2
             // lblDir
             // 
             this.lblDir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblDir.Location = new System.Drawing.Point(730, 45);
+            this.lblDir.Location = new System.Drawing.Point(639, 36);
             this.lblDir.Name = "lblDir";
-            this.lblDir.Size = new System.Drawing.Size(382, 30);
+            this.lblDir.Size = new System.Drawing.Size(334, 24);
             this.lblDir.TabIndex = 18;
             // 
             // lblActor
             // 
             this.lblActor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblActor.Location = new System.Drawing.Point(682, 135);
+            this.lblActor.Location = new System.Drawing.Point(597, 108);
             this.lblActor.Name = "lblActor";
-            this.lblActor.Size = new System.Drawing.Size(430, 30);
+            this.lblActor.Size = new System.Drawing.Size(376, 24);
             this.lblActor.TabIndex = 17;
             // 
             // lblExp
             // 
             this.lblExp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblExp.Location = new System.Drawing.Point(682, 219);
+            this.lblExp.Location = new System.Drawing.Point(597, 175);
             this.lblExp.Name = "lblExp";
-            this.lblExp.Size = new System.Drawing.Size(430, 316);
+            this.lblExp.Size = new System.Drawing.Size(376, 253);
             this.lblExp.TabIndex = 16;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(682, 184);
+            this.label4.Location = new System.Drawing.Point(597, 147);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 15);
+            this.label4.Size = new System.Drawing.Size(61, 12);
             this.label4.TabIndex = 15;
             this.label4.Text = "영화 내용:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(682, 107);
+            this.label3.Location = new System.Drawing.Point(597, 86);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 15);
+            this.label3.Size = new System.Drawing.Size(61, 12);
             this.label3.TabIndex = 14;
             this.label3.Text = "주연 배우:";
             // 
             // laber3
             // 
             this.laber3.AutoSize = true;
-            this.laber3.Location = new System.Drawing.Point(682, 54);
+            this.laber3.Location = new System.Drawing.Point(597, 43);
             this.laber3.Name = "laber3";
-            this.laber3.Size = new System.Drawing.Size(42, 15);
+            this.laber3.Size = new System.Drawing.Size(33, 12);
             this.laber3.TabIndex = 13;
             this.laber3.Text = "감독:";
             // 
             // lblMovieName
             // 
             this.lblMovieName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblMovieName.Location = new System.Drawing.Point(360, 458);
+            this.lblMovieName.Location = new System.Drawing.Point(315, 366);
             this.lblMovieName.Name = "lblMovieName";
-            this.lblMovieName.Size = new System.Drawing.Size(259, 77);
+            this.lblMovieName.Size = new System.Drawing.Size(227, 62);
             this.lblMovieName.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(357, 428);
+            this.label1.Location = new System.Drawing.Point(312, 342);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 15);
+            this.label1.Size = new System.Drawing.Size(33, 12);
             this.label1.TabIndex = 11;
             this.label1.Text = "제목:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -144,18 +145,20 @@ namespace VP4._2
             // 
             this.lbMemo.AccessibleName = "";
             this.lbMemo.FormattingEnabled = true;
-            this.lbMemo.ItemHeight = 15;
-            this.lbMemo.Location = new System.Drawing.Point(1185, 282);
+            this.lbMemo.ItemHeight = 12;
+            this.lbMemo.Location = new System.Drawing.Point(1037, 226);
+            this.lbMemo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbMemo.Name = "lbMemo";
-            this.lbMemo.Size = new System.Drawing.Size(334, 244);
+            this.lbMemo.Size = new System.Drawing.Size(293, 196);
             this.lbMemo.TabIndex = 21;
             this.lbMemo.SelectedIndexChanged += new System.EventHandler(this.lbMemo_SelectedIndexChanged);
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(490, 369);
+            this.btnCheck.Location = new System.Drawing.Point(429, 295);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(128, 50);
+            this.btnCheck.Size = new System.Drawing.Size(112, 40);
             this.btnCheck.TabIndex = 22;
             this.btnCheck.Text = "확인";
             this.btnCheck.UseVisualStyleBackColor = true;
@@ -165,9 +168,9 @@ namespace VP4._2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("굴림", 20F);
-            this.label2.Location = new System.Drawing.Point(1179, 41);
+            this.label2.Location = new System.Drawing.Point(1032, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 34);
+            this.label2.Size = new System.Drawing.Size(66, 27);
             this.label2.TabIndex = 23;
             this.label2.Text = "예매";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -175,24 +178,26 @@ namespace VP4._2
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1182, 162);
+            this.label6.Location = new System.Drawing.Point(1034, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 15);
+            this.label6.Size = new System.Drawing.Size(61, 12);
             this.label6.TabIndex = 25;
             this.label6.Text = "보는 인원:";
             // 
             // tbPeople
             // 
-            this.tbPeople.Location = new System.Drawing.Point(1293, 159);
+            this.tbPeople.Location = new System.Drawing.Point(1131, 127);
+            this.tbPeople.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPeople.Name = "tbPeople";
-            this.tbPeople.Size = new System.Drawing.Size(226, 25);
+            this.tbPeople.Size = new System.Drawing.Size(198, 21);
             this.tbPeople.TabIndex = 27;
             // 
             // btnMemo
             // 
-            this.btnMemo.Location = new System.Drawing.Point(1413, 219);
+            this.btnMemo.Location = new System.Drawing.Point(1236, 175);
+            this.btnMemo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMemo.Name = "btnMemo";
-            this.btnMemo.Size = new System.Drawing.Size(106, 41);
+            this.btnMemo.Size = new System.Drawing.Size(93, 33);
             this.btnMemo.TabIndex = 28;
             this.btnMemo.Text = "예매하기";
             this.btnMemo.UseVisualStyleBackColor = true;
@@ -203,11 +208,11 @@ namespace VP4._2
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.rdoFmale);
             this.groupBox1.Controls.Add(this.rdoMale);
-            this.groupBox1.Location = new System.Drawing.Point(74, 107);
+            this.groupBox1.Location = new System.Drawing.Point(65, 86);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(195, 140);
+            this.groupBox1.Size = new System.Drawing.Size(171, 112);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "성별";
@@ -216,10 +221,10 @@ namespace VP4._2
             // rdoFmale
             // 
             this.rdoFmale.AutoSize = true;
-            this.rdoFmale.Location = new System.Drawing.Point(19, 82);
+            this.rdoFmale.Location = new System.Drawing.Point(17, 66);
             this.rdoFmale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoFmale.Name = "rdoFmale";
-            this.rdoFmale.Size = new System.Drawing.Size(59, 19);
+            this.rdoFmale.Size = new System.Drawing.Size(48, 16);
             this.rdoFmale.TabIndex = 1;
             this.rdoFmale.Text = "여성";
             this.rdoFmale.UseVisualStyleBackColor = true;
@@ -227,10 +232,10 @@ namespace VP4._2
             // rdoMale
             // 
             this.rdoMale.AutoSize = true;
-            this.rdoMale.Location = new System.Drawing.Point(19, 41);
+            this.rdoMale.Location = new System.Drawing.Point(17, 33);
             this.rdoMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(59, 19);
+            this.rdoMale.Size = new System.Drawing.Size(48, 16);
             this.rdoMale.TabIndex = 0;
             this.rdoMale.Text = "남성";
             this.rdoMale.UseVisualStyleBackColor = true;
@@ -241,11 +246,11 @@ namespace VP4._2
             this.gbCon.Controls.Add(this.rdoDisabled);
             this.gbCon.Controls.Add(this.rdoTeenager);
             this.gbCon.Controls.Add(this.rdoAdult);
-            this.gbCon.Location = new System.Drawing.Point(74, 300);
+            this.gbCon.Location = new System.Drawing.Point(65, 240);
             this.gbCon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbCon.Name = "gbCon";
             this.gbCon.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbCon.Size = new System.Drawing.Size(195, 140);
+            this.gbCon.Size = new System.Drawing.Size(171, 112);
             this.gbCon.TabIndex = 33;
             this.gbCon.TabStop = false;
             this.gbCon.Text = "연령 선택";
@@ -254,10 +259,10 @@ namespace VP4._2
             // rdoDisabled
             // 
             this.rdoDisabled.AutoSize = true;
-            this.rdoDisabled.Location = new System.Drawing.Point(19, 88);
+            this.rdoDisabled.Location = new System.Drawing.Point(17, 70);
             this.rdoDisabled.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoDisabled.Name = "rdoDisabled";
-            this.rdoDisabled.Size = new System.Drawing.Size(116, 19);
+            this.rdoDisabled.Size = new System.Drawing.Size(94, 16);
             this.rdoDisabled.TabIndex = 3;
             this.rdoDisabled.Text = "장애인(우대)";
             this.rdoDisabled.UseVisualStyleBackColor = true;
@@ -265,10 +270,10 @@ namespace VP4._2
             // rdoTeenager
             // 
             this.rdoTeenager.AutoSize = true;
-            this.rdoTeenager.Location = new System.Drawing.Point(19, 62);
+            this.rdoTeenager.Location = new System.Drawing.Point(17, 50);
             this.rdoTeenager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoTeenager.Name = "rdoTeenager";
-            this.rdoTeenager.Size = new System.Drawing.Size(74, 19);
+            this.rdoTeenager.Size = new System.Drawing.Size(60, 16);
             this.rdoTeenager.TabIndex = 2;
             this.rdoTeenager.Text = "청소년";
             this.rdoTeenager.UseVisualStyleBackColor = true;
@@ -276,27 +281,28 @@ namespace VP4._2
             // rdoAdult
             // 
             this.rdoAdult.AutoSize = true;
-            this.rdoAdult.Location = new System.Drawing.Point(19, 38);
+            this.rdoAdult.Location = new System.Drawing.Point(17, 30);
             this.rdoAdult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoAdult.Name = "rdoAdult";
-            this.rdoAdult.Size = new System.Drawing.Size(59, 19);
+            this.rdoAdult.Size = new System.Drawing.Size(48, 16);
             this.rdoAdult.TabIndex = 1;
             this.rdoAdult.Text = "성인";
             this.rdoAdult.UseVisualStyleBackColor = true;
             // 
             // tbSeat
             // 
-            this.tbSeat.Location = new System.Drawing.Point(1293, 104);
+            this.tbSeat.Location = new System.Drawing.Point(1131, 83);
+            this.tbSeat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbSeat.Name = "tbSeat";
-            this.tbSeat.Size = new System.Drawing.Size(226, 25);
+            this.tbSeat.Size = new System.Drawing.Size(198, 21);
             this.tbSeat.TabIndex = 35;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1182, 107);
+            this.label7.Location = new System.Drawing.Point(1034, 86);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 15);
+            this.label7.Size = new System.Drawing.Size(33, 12);
             this.label7.TabIndex = 34;
             this.label7.Text = "자리:";
             // 
@@ -304,18 +310,19 @@ namespace VP4._2
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("굴림", 20F);
-            this.label5.Location = new System.Drawing.Point(12, 45);
+            this.label5.Location = new System.Drawing.Point(10, 36);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(320, 34);
+            this.label5.Size = new System.Drawing.Size(255, 27);
             this.label5.TabIndex = 36;
             this.label5.Text = "이용자 및 영화 선택";
             // 
             // pbPoster
             // 
             this.pbPoster.Image = global::VP4._2.Properties.Resources._6;
-            this.pbPoster.Location = new System.Drawing.Point(360, 45);
+            this.pbPoster.Location = new System.Drawing.Point(315, 36);
+            this.pbPoster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbPoster.Name = "pbPoster";
-            this.pbPoster.Size = new System.Drawing.Size(258, 304);
+            this.pbPoster.Size = new System.Drawing.Size(226, 243);
             this.pbPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPoster.TabIndex = 20;
             this.pbPoster.TabStop = false;
@@ -325,17 +332,17 @@ namespace VP4._2
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("굴림", 15F);
-            this.label8.Location = new System.Drawing.Point(1185, 235);
+            this.label8.Location = new System.Drawing.Point(1037, 188);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 25);
+            this.label8.Size = new System.Drawing.Size(96, 20);
             this.label8.TabIndex = 37;
             this.label8.Text = "예매 내역";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1548, 574);
+            this.ClientSize = new System.Drawing.Size(1354, 459);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbSeat);
@@ -358,6 +365,7 @@ namespace VP4._2
             this.Controls.Add(this.laber3);
             this.Controls.Add(this.lblMovieName);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "CGV";
             this.Load += new System.EventHandler(this.Form1_Load);
