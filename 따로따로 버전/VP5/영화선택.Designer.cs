@@ -50,6 +50,11 @@ namespace VP5
             this.lbmemo = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.lblGenre = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbPoster)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,35 +83,40 @@ namespace VP5
             // lblDir
             // 
             this.lblDir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblDir.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblDir.Location = new System.Drawing.Point(309, 11);
             this.lblDir.Name = "lblDir";
             this.lblDir.Size = new System.Drawing.Size(334, 24);
             this.lblDir.TabIndex = 30;
+            this.lblDir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblActor
             // 
             this.lblActor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblActor.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblActor.Location = new System.Drawing.Point(267, 83);
             this.lblActor.Name = "lblActor";
             this.lblActor.Size = new System.Drawing.Size(376, 24);
             this.lblActor.TabIndex = 29;
+            this.lblActor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblExp
             // 
             this.lblExp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblExp.Location = new System.Drawing.Point(267, 150);
+            this.lblExp.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblExp.Location = new System.Drawing.Point(267, 209);
             this.lblExp.Name = "lblExp";
-            this.lblExp.Size = new System.Drawing.Size(376, 345);
+            this.lblExp.Size = new System.Drawing.Size(376, 286);
             this.lblExp.TabIndex = 28;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(267, 122);
+            this.label4.Location = new System.Drawing.Point(267, 183);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 12);
+            this.label4.Size = new System.Drawing.Size(105, 12);
             this.label4.TabIndex = 27;
-            this.label4.Text = "영화 내용:";
+            this.label4.Text = "영화 내용, 줄거리:";
             // 
             // label3
             // 
@@ -129,6 +139,7 @@ namespace VP5
             // lblMovieName
             // 
             this.lblMovieName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblMovieName.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblMovieName.Location = new System.Drawing.Point(12, 382);
             this.lblMovieName.Name = "lblMovieName";
             this.lblMovieName.Size = new System.Drawing.Size(227, 113);
@@ -145,7 +156,7 @@ namespace VP5
             // 
             // btnMovieSelct
             // 
-            this.btnMovieSelct.Location = new System.Drawing.Point(760, 194);
+            this.btnMovieSelct.Location = new System.Drawing.Point(760, 207);
             this.btnMovieSelct.Name = "btnMovieSelct";
             this.btnMovieSelct.Size = new System.Drawing.Size(101, 42);
             this.btnMovieSelct.TabIndex = 37;
@@ -225,28 +236,79 @@ namespace VP5
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("굴림", 11F);
+            this.label7.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.Location = new System.Drawing.Point(662, 234);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 15);
+            this.label7.Size = new System.Drawing.Size(77, 15);
             this.label7.TabIndex = 46;
             this.label7.Text = "예매 내역";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("굴림", 11F);
+            this.label8.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label8.Location = new System.Drawing.Point(754, 15);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 15);
+            this.label8.Size = new System.Drawing.Size(115, 15);
             this.label8.TabIndex = 47;
             this.label8.Text = "예매 인원 입력";
+            // 
+            // lblGenre
+            // 
+            this.lblGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblGenre.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblGenre.Location = new System.Drawing.Point(267, 146);
+            this.lblGenre.Name = "lblGenre";
+            this.lblGenre.Size = new System.Drawing.Size(376, 24);
+            this.lblGenre.TabIndex = 49;
+            this.lblGenre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(267, 124);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(33, 12);
+            this.label10.TabIndex = 48;
+            this.label10.Text = "장르:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(794, 76);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 12);
+            this.label9.TabIndex = 50;
+            this.label9.Text = "인당 1만 원";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(794, 128);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(67, 12);
+            this.label11.TabIndex = 51;
+            this.label11.Text = "인당 7천 원";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(794, 177);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(67, 12);
+            this.label12.TabIndex = 52;
+            this.label12.Text = "인당 4천 원";
             // 
             // 영화선택
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 507);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lblGenre);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbmemo);
@@ -300,5 +362,10 @@ namespace VP5
         private System.Windows.Forms.ListBox lbmemo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblGenre;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

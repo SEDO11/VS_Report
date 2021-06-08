@@ -13,17 +13,15 @@ namespace VP5
 {
     public partial class 영화선택 : Form
     {
-        List<Class> frList = new List<Class>();
+        List<Class> frList = new List<Class>(); //listbox에 순서대로 저장할 리스트 변수 설정
+        MovieStory ms = new MovieStory(); //영화 정보 들어있는 클래스 가져오기
         OpenFileDialog ofd;
-        string filename = " ";
-        bool fst = true;
-        List<string> moviename = new List<string> { " ", "분노의 질주: 더 얼티메이트", "기생충", "귀멸의 칼날", "크루엘라", "노바디", "미나리" };
-        List<string> movedirector = new List<string> { " ", "저스틴 린", "봉준호", "소토자키 하루오", "크레이그 질레스피", "일리야 나이슐러", "정이삭" };
-        List<string> moveactor = new List<string> { " ", "빈 디젤", "송강호", "카마도 탄지로", "엠마 스톤", "밥 오덴커크", "스티븐 연" };
-        int i = 0;
-        int adultmoney = 10000;
-        int teenmoney = 7000;
-        int dpmoney = 4000;
+        string filename = " "; //이미지 파일 이름 값 받을 변수 설정
+        bool fst = true; //버튼 행동 값 받을 논리 변수 설정
+        int i = 0; //영화 순서
+        int adultmoney = 10000; //어른 영화표 가격
+        int teenmoney = 7000; //청소년 영화표 가격
+        int dpmoney = 4000; //장애인 우대 영화표 가격
         public 영화선택()
         {
             InitializeComponent();
@@ -37,28 +35,31 @@ namespace VP5
             lblExp.Text = "영화를 선택해 주세요.";
         }
 
-        private void btnCheck_Click(object sender, EventArgs e)
+        private void btnCheck_Click(object sender, EventArgs e) //클릭시 해당 영화 정보를 가져온다.
         {
-            //클릭시 파일명 얻기
             if (!fst) //버튼으로 이미지를 선택 한 경우
             {
                 filename = Path.GetFileNameWithoutExtension(ofd.FileName);
                 Int32.TryParse(filename, out i); //파일 이름을 출력해서 해당하는 정보들 출력
-                if (filename != "cgv")
-                {
-                    lblMovieName.Text = moviename[i];
-                    lblDir.Text = movedirector[i];
-                    lblActor.Text = moveactor[i];
-                    MovieStory ms = new MovieStory();
-                    string result = ms.Story(i);
-                    lblExp.Text = result;
-                    tbAdult.Enabled = true;
-                    tbTeen.Enabled = true;
-                    tbDp.Enabled = true;
 
+                if (filename != "cgv") //이미지 파일 명이 cgv가 아닐 때 해당 영화들의 정보를 출력
+                {
+                    string story = ms.Story(i); //클래스에서 영화 줄거리 설명 가져오기
+                    string actor = ms.Actor(i); //클래스에서 영화 배우 가져오기
+                    string director = ms.Director(i); //클래스에서 영화 감독 가져오기
+                    string genre = ms.Genre(i); //클래스에서 영화 장르 가져오기
+                    string moviename = ms.MovieName(i); //클래스에서 영화 이름 가져오기
+                    lblMovieName.Text = moviename; //클래스에서 가져온 영화이름 출력
+                    lblGenre.Text = genre; // 영화 장르 출력
+                    lblDir.Text = director; //영화 감독 출력
+                    lblActor.Text = actor; //영화 배우 출력
+                    lblExp.Text = story; //영화 줄거리 출력
+                    tbAdult.Enabled = true; //인원 입력창 open
+                    tbTeen.Enabled = true; //인원 입력창 open
+                    tbDp.Enabled = true; //인원 입력창 open
                 }
 
-                else
+                else //초기상태
                 {
                     lblMovieName.Text = "초기화면";
                     lblDir.Text = " ";
@@ -68,9 +69,9 @@ namespace VP5
             }
         }
 
-        private void btnSelct_Click(object sender, EventArgs e)
+        private void btnSelct_Click(object sender, EventArgs e) 
         {
-            if (ofd.ShowDialog() == DialogResult.OK)
+            if (ofd.ShowDialog() == DialogResult.OK) //영화 선택 버튼을 누르면 이미지를 선택한다.
             {
                 Image image = Image.FromFile(ofd.FileName);
                 pbPoster.Image = image;
@@ -81,43 +82,31 @@ namespace VP5
 
         private void btnMovieSelct_Click(object sender, EventArgs e)
         {
-            //string total_adult;
-            /*
-            영화예매내역 memo = new 영화예매내역();
-            string info = lblMovieName.Text;
-            int adult = int.Parse(tbAdult.Text);
-            int teen = int.Parse(tbAdult.Text);
-            int dp = int.Parse(tbAdult.Text);
-            string totalman = info + "어른" + adult + "명" + "청소년" + teen + "명" + "장애인(우대)" + dp + "명";
-            memo.movieinfo = totalman;
-            int totalmoney = 10000 * adult + 7000 * teen + 4000 * dp;
-            memo.moviemoney = totalmoney;
-            */
-            Class memo = new Class();
-            GetMemoData(memo);
-            frList.Add(memo);
-            lbmemo.Items.Add(moviename[i]);//영화이름 저장
-            //텍스트박스 초기화
-            tbAdult.Clear();
-            tbTeen.Clear();
-            tbDp.Clear();
-
+                Class memo = new Class(); //입력받을 프로퍼티 클래스 사용
+                GetMemoData(memo); 
+                frList.Add(memo);
+                string moviename = lblMovieName.Text;
+                lbmemo.Items.Add(moviename);//영화이름 저장
+                //텍스트박스 초기화
+                tbAdult.Clear(); 
+                tbTeen.Clear();
+                tbDp.Clear();
         }
-        private void GetMemoData(Class fr)
+
+        private void GetMemoData(Class fr) //textbox에 있던 값들을 저장
         {
-            fr.adult = int.Parse(tbAdult.Text);
-            fr.teen = int.Parse(tbTeen.Text);
-            fr.dp = int.Parse(tbDp.Text);
+                fr.adult = int.Parse(tbAdult.Text);
+                fr.teen = int.Parse(tbTeen.Text);
+                fr.dp = int.Parse(tbDp.Text);
         }
 
-        private void lbmemo_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void lbmemo_SelectedIndexChanged_1(object sender, EventArgs e) //listbox를 누르면 예매내역 정보를 자세하게 출력
         {
             int index = lbmemo.SelectedIndex;
-            //인원 정보를 들고옴
-            MessageBox.Show("어른" + frList[index].adult.ToString() + "명\n" +
-               "청소년" + frList[index].teen.ToString() + "명\n" +
-               "장애인" + frList[index].dp.ToString() + "명\n" +
-               "총 가격" + ((adultmoney * frList[index].adult) + (teenmoney * frList[index].teen) + (dpmoney * frList[index].dp)) + "원", ("예매내역"));
+            MessageBox.Show("어른 " + frList[index].adult.ToString() + " 명\n" +
+               "청소년 " + frList[index].teen.ToString() + " 명\n" +
+               "장애인(우대) " + frList[index].dp.ToString() + " 명\n" +
+               "총 가격 " + ((adultmoney * frList[index].adult) + (teenmoney * frList[index].teen) + (dpmoney * frList[index].dp)) + " 원", ("예매내역"));
         }
 
         private void 영화선택_Load(object sender, EventArgs e)

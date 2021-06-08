@@ -90,17 +90,18 @@ namespace VP5
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 20F);
+            this.label1.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(139, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 27);
+            this.label1.Size = new System.Drawing.Size(96, 27);
             this.label1.TabIndex = 13;
             this.label1.Text = "로그인";
             // 
             // lblinfo
             // 
-            this.lblinfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblinfo.BackColor = System.Drawing.SystemColors.Control;
             this.lblinfo.Font = new System.Drawing.Font("굴림", 11F);
+            this.lblinfo.ForeColor = System.Drawing.Color.Red;
             this.lblinfo.Location = new System.Drawing.Point(22, 218);
             this.lblinfo.Name = "lblinfo";
             this.lblinfo.Size = new System.Drawing.Size(317, 29);
