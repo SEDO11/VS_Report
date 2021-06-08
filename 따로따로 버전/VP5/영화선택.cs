@@ -35,7 +35,7 @@ namespace VP5
             lblExp.Text = "영화를 선택해 주세요.";
         }
 
-        private void btnCheck_Click(object sender, EventArgs e) //클릭시 해당 영화 정보를 가져온다.
+        private void btnCheck_Click(object sender, EventArgs e) //확인 버튼, 클릭시 해당 영화 정보를 가져온다.
         {
             if (!fst) //버튼으로 이미지를 선택 한 경우
             {
@@ -69,7 +69,7 @@ namespace VP5
             }
         }
 
-        private void btnSelct_Click(object sender, EventArgs e) 
+        private void btnSelct_Click(object sender, EventArgs e) //영화 선택 버튼
         {
             if (ofd.ShowDialog() == DialogResult.OK) //영화 선택 버튼을 누르면 이미지를 선택한다.
             {
@@ -80,7 +80,7 @@ namespace VP5
             }
         }
 
-        private void btnMovieSelct_Click(object sender, EventArgs e)
+        private void btnMovieSelct_Click(object sender, EventArgs e) //예매하기 버튼
         {
                 Class memo = new Class(); //입력받을 프로퍼티 클래스 사용
                 GetMemoData(memo); 
