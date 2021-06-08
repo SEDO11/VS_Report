@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VP5
 {
-    class MovieStory
+    class MovieStory //영화 정보 데이터 저장 클래스
     {
         public string Actor(int i) //영화 배우 정보
         {
@@ -36,7 +36,7 @@ namespace VP5
             return output;
         }
 
-        public string Genre(int i)  //영화 장르 정보
+        public string Genre(int i) //영화 장르 정보
         {
             List<string> moviegenre = new List<string>();
             moviegenre.Add(""); //널값

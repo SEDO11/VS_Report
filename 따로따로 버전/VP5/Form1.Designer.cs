@@ -36,11 +36,13 @@ namespace VP5
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblinfo = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(223, 269);
+            this.btnLogin.Location = new System.Drawing.Point(224, 276);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(118, 48);
@@ -51,7 +53,7 @@ namespace VP5
             // 
             // tbPw
             // 
-            this.tbPw.Location = new System.Drawing.Point(95, 174);
+            this.tbPw.Location = new System.Drawing.Point(96, 184);
             this.tbPw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPw.Name = "tbPw";
             this.tbPw.Size = new System.Drawing.Size(246, 21);
@@ -61,7 +63,7 @@ namespace VP5
             // 
             // tbId
             // 
-            this.tbId.Location = new System.Drawing.Point(95, 134);
+            this.tbId.Location = new System.Drawing.Point(96, 144);
             this.tbId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(246, 21);
@@ -72,7 +74,7 @@ namespace VP5
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 176);
+            this.label3.Location = new System.Drawing.Point(23, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 12);
             this.label3.TabIndex = 15;
@@ -81,7 +83,7 @@ namespace VP5
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 136);
+            this.label2.Location = new System.Drawing.Point(23, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 12);
             this.label2.TabIndex = 14;
@@ -91,7 +93,7 @@ namespace VP5
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(139, 63);
+            this.label1.Location = new System.Drawing.Point(233, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 27);
             this.label1.TabIndex = 13;
@@ -102,17 +104,30 @@ namespace VP5
             this.lblinfo.BackColor = System.Drawing.SystemColors.Control;
             this.lblinfo.Font = new System.Drawing.Font("굴림", 11F);
             this.lblinfo.ForeColor = System.Drawing.Color.Red;
-            this.lblinfo.Location = new System.Drawing.Point(22, 218);
+            this.lblinfo.Location = new System.Drawing.Point(23, 228);
             this.lblinfo.Name = "lblinfo";
             this.lblinfo.Size = new System.Drawing.Size(317, 29);
             this.lblinfo.TabIndex = 19;
             this.lblinfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::VP5.Properties.Resources.로고;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(173, 117);
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(364, 353);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblinfo);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbPw);
@@ -122,6 +137,7 @@ namespace VP5
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "CGV";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +152,7 @@ namespace VP5
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblinfo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

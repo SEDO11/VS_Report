@@ -72,11 +72,6 @@
     <Compile Include="MovieStory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserInfoDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="메뉴.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,17 +112,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="UserInfoDataSet.xsc">
-      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="UserInfoDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>UserInfoDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UserInfoDataSet.xss">
-      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -140,13 +124,8 @@
     <None Include="Resources\5.jpg" />
     <None Include="Resources\6.jpg" />
     <None Include="Resources\cgv.jpg" />
-    <Content Include="UserInfo.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="UserInfo_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>UserInfo.mdf</DependentUpon>
-    </Content>
+    <None Include="Resources\로고.png" />
+    <None Include="Resources\로그인 배경화면.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
